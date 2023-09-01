@@ -1,7 +1,7 @@
 ---
 title: "Aryabhatta Labs"
 
-description: "Making world smarter everyday"
+description: "Making our world smarter everyday"
 theme_version: '2.8.2'
 cascade:
   featured_image: '/images/aurora.png'
@@ -12,7 +12,7 @@ Our vision is that we humans should leave all the boring stuff to robots and AI 
 
 ***
 
-❤️ We would love to hear from you!
+We would ❤️ to hear from you!
 
 {{< form-contact action="https://formspree.io/f/xpzgrqqg" >}}
 
