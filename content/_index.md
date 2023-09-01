@@ -1,15 +1,21 @@
 ---
-title: "Ananke: a Hugo Theme"
+title: "Aryabhatta Labs"
 
-description: "The last theme you'll ever need. Maybe."
-# 1. To ensure Netlify triggers a build on our exampleSite instance, we need to change a file in the exampleSite directory.
+description: "Making world smarter everyday"
 theme_version: '2.8.2'
 cascade:
-  featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+  featured_image: '/images/aurora.png'
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
 
+🎯 We are a tech startup with focus on building AI based workflow applications to help professionals and companies succeed.
+Our vision is that we humans should leave all the boring stuff to robots and AI and focus on more creative endeavours!
 
+***
+
+❤️ We would love to hear from you!
 
 {{< form-contact action="https://formspree.io/f/xpzgrqqg" >}}
 
+
+
+🏢  Oakville, ON, Canada.
