@@ -14,7 +14,7 @@ We are responsible for maintaining and protecting the Personal Information under
 
 We collect, use and disclose Personal Information to provide you with the product or service you have requested and to offer you additional products and services we believe you might be interested in. The purposes for which we collect Personal Information will be identified before or at the time we collect the information. In certain circumstances, the purposes for which information is collected may be clear, and consent may be implied, such as where your name, address and payment information is provided as part of the order process.
 
-  
+
 
 3. Consent
 
@@ -65,10 +65,9 @@ You may direct any questions or enquiries with respect to our privacy policy or 
 contacting:
 
  
+contact [@] aryabhatta.ca
 
-[Contact Information]
 
- 
 
 Additional Information
 
