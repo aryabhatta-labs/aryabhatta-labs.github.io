@@ -14,7 +14,7 @@ Our vision is that we humans should leave all the boring stuff to robots and AI 
 
 We would ❤️ to hear from you!
 
-{{< form-contact action="https://formspree.io/f/xpzgrqqg" >}}
+{!-- {< form-contact action="https://formspree.io/f/xpzgrqqg" >} --}
 
 
 
