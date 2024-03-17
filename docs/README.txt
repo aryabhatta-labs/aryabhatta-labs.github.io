@@ -29,3 +29,7 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+To get theme files:
+    `git submodule update --init --remote`
+    
