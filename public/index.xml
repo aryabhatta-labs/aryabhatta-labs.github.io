@@ -6,5 +6,25 @@
     <description>Recent content on Aryabhatta Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aryabhatta Labs</title>
+      <link>/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/home/</guid>
+      <description>🎯 We are a tech startup with focus on building AI based workflow applications to help professionals and companies succeed. Our vision is that we humans should leave all the boring stuff to robots and AI and focus on more creative endeavours!
+We would ❤️ to hear from you!
+Your Name Email Address An email address is required. Message 🏢 Oakville, ON, Canada.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>We are committed to maintaining the accuracy, confidentiality, and security of your personally identifiable information (&amp;ldquo;Personal Information&amp;rdquo;). As part of this commitment, our privacy policy governs our actions as they relate to the collection, use and disclosure of Personal Information. Our privacy policy is based upon the values set by the Canadian Standards Association&amp;rsquo;s Model Code for the Protection of Personal Information and Canada&amp;rsquo;s Personal Information Protection and Electronic Documents Act.</description>
+    </item>
+    
   </channel>
 </rss>
