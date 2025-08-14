@@ -20,10 +20,19 @@ Your Name Email Address An email address is required. Message 🏢 Oakville, ON,
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Aug 2025</pubDate>
       
       <guid>/privacy/</guid>
       <description>We are committed to maintaining the accuracy, confidentiality, and security of your personally identifiable information (&amp;ldquo;Personal Information&amp;rdquo;). As part of this commitment, our privacy policy governs our actions as they relate to the collection, use and disclosure of Personal Information. Our privacy policy is based upon the values set by the Canadian Standards Association&amp;rsquo;s Model Code for the Protection of Personal Information and Canada&amp;rsquo;s Personal Information Protection and Electronic Documents Act.</description>
+    </item>
+
+    <item>
+      <title>Terms of Use</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 14 Aug 2025</pubDate>
+      
+      <guid>/terms/</guid>
+      <description>Welcome to Aryabhatta Labs ('Service,' 'Software,' or 'Platform'). These Terms of Use ('Terms') govern your access to and use of our cloud-based software as a service (SaaS) platform. By accessing or using the any of the Aryabhatta Labs products, you agree to comply with and be bound by these Terms. If you do not agree, please do not use Aryabhatta Labs services.</description>
     </item>
     
   </channel>
