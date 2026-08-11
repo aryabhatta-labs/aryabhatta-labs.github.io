@@ -1,0 +1,365 @@
+/* ==========================================================================
+   Tulip Design System — Aryabhatta Labs site theme
+   Palette: Minimal (greyscale) — see ExpenseFlow tulip-design-system.md
+   ========================================================================== */
+
+:root {
+  /* Color tokens (Minimal / light) */
+  --color-primary: rgb(51 51 51);
+  --color-on-primary: rgb(255 255 255);
+  --color-secondary: rgb(102 102 102);
+  --color-on-secondary: rgb(255 255 255);
+  --color-error: rgb(255 59 48);
+  --color-on-error: rgb(255 255 255);
+
+  --color-surface: rgb(255 255 255);
+  --color-surface-dim: rgb(240 240 240);
+  --color-surface-bright: rgb(255 255 255);
+
+  --color-foreground: rgb(51 51 51);
+  --color-muted-foreground: rgb(102 102 102);
+
+  --color-card: rgb(255 255 255);
+  --color-muted: rgb(245 245 245);
+
+  --color-border: rgb(224 224 224);
+  --color-outline: rgb(51 51 51);
+  --color-input: rgb(245 245 245);
+  --color-ring: rgb(51 51 51);
+
+  /* Typography tokens */
+  --font-display: 'Jost', sans-serif;
+  --font-size-primary: 26px;
+  --font-size-secondary: 16px;
+  --font-size-tertiary: 12px;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-foreground);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-foreground);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Header / Nav — light surface, no more black-and-yellow
+   ========================================================================== */
+
+.header-area .bg-black,
+header .bg-black {
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Homepage/product-page header sits as an absolute overlay on the hero
+   image by default; make it a solid light bar instead so nav text stays
+   legible regardless of what's behind it. */
+.header-transparent {
+  position: relative !important;
+  background: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-area .logo h1,
+.header-area .logo a {
+  color: var(--color-foreground) !important;
+}
+
+.main-menu ul#navigation > li > a {
+  color: var(--color-foreground) !important;
+  font-family: var(--font-display);
+}
+
+.main-menu ul#navigation > li > a:hover {
+  color: var(--color-primary) !important;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.slider-area {
+  background-image: none !important;
+  background-color: var(--color-surface-dim) !important;
+}
+
+.hero__caption h1 {
+  color: var(--color-foreground) !important;
+}
+
+.hero__caption p {
+  color: var(--color-muted-foreground) !important;
+}
+
+/* ==========================================================================
+   Section titles ("Our Products", "Contact Us", "About Us", "News & Articles")
+   ========================================================================== */
+
+.wantToWork-caption h1 {
+  color: var(--color-foreground) !important;
+  font-weight: 900;
+}
+
+.wantToWork-caption p {
+  color: var(--color-muted-foreground) !important;
+}
+
+/* ==========================================================================
+   Tulip button system
+   ========================================================================== */
+
+.tulip-btn {
+  padding: 0.625rem 1.25rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, opacity 150ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.tulip-btn.tulip-btn--outline {
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-foreground);
+}
+
+.tulip-btn.tulip-btn--outline:hover {
+  background-color: var(--color-surface-dim);
+  color: var(--color-foreground);
+}
+
+.tulip-btn.tulip-btn--filled {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: 1px solid transparent;
+}
+
+.tulip-btn.tulip-btn--filled:hover {
+  opacity: 0.9;
+  color: var(--color-on-primary);
+}
+
+/* ==========================================================================
+   Cards (products, about, news)
+   ========================================================================== */
+
+.single-services {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.12s ease;
+  padding: 1.5rem;
+}
+
+.single-services:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Equal-height product/service cards regardless of content length */
+.our-products .row,
+.our-services .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.our-products .single-services,
+.our-services .single-services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-products .single-services .tailor-details-btn,
+.our-services .single-services .tailor-details-btn {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.single-services h3,
+.single-services h5 {
+  color: var(--color-foreground);
+}
+
+.single-services p {
+  color: var(--color-muted-foreground);
+}
+
+.services-ion span {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Pill / badge
+   ========================================================================== */
+
+.tulip-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+  font-size: var(--font-size-tertiary);
+  font-weight: 600;
+  padding: 0.125rem 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tulip-pill--primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* ==========================================================================
+   News / blog list
+   ========================================================================== */
+
+.tulip-post-date {
+  font-size: var(--font-size-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted-foreground);
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.fields .field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.fields .field input,
+.fields .field textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background-color: var(--color-input);
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+.fields .field input:focus,
+.fields .field textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.1);
+}
+
+.actions input[type="submit"] {
+  padding: 0.625rem 1.25rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 150ms ease;
+}
+
+.actions input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================================================
+   Security report form (ananke/tachyons page)
+   ========================================================================== */
+
+#report-form label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted-foreground);
+}
+
+#report-form input,
+#report-form textarea {
+  border: 1px solid var(--color-border) !important;
+  border-radius: 3px !important;
+  background-color: var(--color-input) !important;
+  color: var(--color-foreground);
+  font-family: inherit;
+  transition: border-color 150ms, box-shadow 150ms;
+}
+
+#report-form input:focus,
+#report-form textarea:focus {
+  border-color: var(--color-primary) !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.1);
+}
+
+/* ==========================================================================
+   Footer — light surface instead of black
+   ========================================================================== */
+
+footer,
+footer .bg-black,
+.footer-area {
+  background: var(--color-surface-dim) !important;
+  background-image: none !important;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-tittle h4,
+.footer-tittle h4 span {
+  color: var(--color-foreground) !important;
+  font-family: var(--font-display);
+}
+
+.footer-tittle ul li a {
+  color: var(--color-muted-foreground) !important;
+}
+
+.footer-tittle ul li a:hover {
+  color: var(--color-primary) !important;
+}
+
+.footer-copy-right p,
+.footer-copy-right p a {
+  color: var(--color-muted-foreground) !important;
+}
+
+.footer-social a {
+  color: var(--color-foreground) !important;
+  border-color: var(--color-border) !important;
+}
+
+/* ==========================================================================
+   Back-to-top button
+   ========================================================================== */
+
+#back-top {
+  background: var(--color-primary) !important;
+  color: var(--color-on-primary) !important;
+}
