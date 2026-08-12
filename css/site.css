@@ -71,7 +71,7 @@ footer{padding:60px 56px 40px;background:#fff;border-top:1px solid var(--line)}
 .fcols h4{font:600 11px 'Roboto',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
 .fcol-links{display:flex;flex-direction:column;gap:10px;font:400 14px 'Roboto',sans-serif;color:#555}
 .fbottom{display:flex;justify-content:space-between;align-items:center;margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font:400 12px 'Roboto',sans-serif;color:#a0a0a0}
-@media(max-width:900px){.prodgrid,.aboutgrid,.pillars,.fcols{grid-template-columns:1fr}.facts{flex-wrap:wrap;gap:24px}.comp .h1{font-size:44px}.comp.back .h1{font-size:40px}}
+@media(max-width:900px){.prodgrid,.aboutgrid,.pillars,.fcols,.cgrid,.two{grid-template-columns:1fr}.facts{flex-wrap:wrap;gap:24px}.comp .h1{font-size:44px}.comp.back .h1{font-size:40px}}
 .contact{padding:80px 56px 96px}
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;max-width:1180px}
 .cgrid p.intro{font:400 18px/1.6 'Roboto',sans-serif;color:var(--body);max-width:440px;margin:22px 0 44px}
